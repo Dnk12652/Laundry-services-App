@@ -1,0 +1,42 @@
+.parent{
+ width:100vw;
+ margin-top: none;   
+}
+.footer{
+    width:90%;
+    margin-left:5%;
+}
+.referal{
+    text-align: center;
+    height:5%;
+    background: #F8F9FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -3px 6px #0000000B;
+    opacity: 1;
+}
+.referal h1{
+    color: #5861AE;
+
+}
+.socialmedia{
+    display: flex;
+    height: 197px;
+    justify-content: space-around;
+    background-color:#ffffff ;
+    box-shadow: hwb(240 97% 2%) 2% 4%;
+    opacity: 1;
+}
+.images-social img{
+padding-left: 12%;
+}
+.img{
+    padding-top: 8%;
+}
+.copyright{
+    height: 5%;
+    text-align: center;
+    font: normal normal normal 12px/24px Avenir;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    opacity: 1;
+    background-color: black;
+}

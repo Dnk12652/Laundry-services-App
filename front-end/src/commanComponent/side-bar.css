@@ -1,0 +1,46 @@
+.sidebarparent_div{
+    width: 4vw;
+    top:13vh;
+    height:100vh;
+    background-color: #5861AE;
+    position: fixed;
+}
+.sidebarnav_home,.sidebarnav_create,.sidebarnav_show{
+    width: 4vw;
+    height: 7vh;
+
+}
+.sidebarnav_home{
+    background-image: url("../images/side-bar-home.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+.sidebarnav_create{
+    background-image: url("../images/white=side-bar-plus.png.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+.sidebarnav_show{
+    background-color: #FFFFFF;
+    background-image: url("../images/blue-side-bar-more.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+/* .sidenav-show{
+    background-image: url("../images/side-bar-more.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+} 
+
+/* .sidenav-create{
+    background-color: #ffff;
+    background-image: url("../images/side-bar-plus.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+} */

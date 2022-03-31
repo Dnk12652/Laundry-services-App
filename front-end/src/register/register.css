@@ -1,0 +1,111 @@
+.register-parent{
+    width:100vw;
+    height:100vh;
+}
+.register-btn{
+    width:20%;
+    margin-left: 5%;
+}
+.register-details h1{
+    width:10%;
+    font: normal normal 900 50px/70px Avenir;
+    letter-spacing: 0px;
+    color: #5861AE;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.register-details p{
+    font: normal normal normal 18px/24px Avenir;
+    letter-spacing: 0.8px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left: 5%;
+    width:50%;
+}
+.register-details2 p{
+    font: normal normal normal 15px/23px Avenir;
+    letter-spacing: 0.64px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left: 5%;
+    margin-top: 45%;
+}
+/* .register-details2{
+    margin-top: 40%;
+} */
+.register-details2 button{
+    border: 2px solid #4552C1;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 8%;
+    padding:2% 8% 2% 7%;
+    background-color: hsl(0, 0%, 100%);
+    color: #4552C1;
+}
+.user-register{
+    border-bottom:2px solid #4552C1;
+    width:90%;
+    margin-left:5%;
+}
+.user-register .register-btn,.user-register .registration-form{
+    display: inline-block;
+}
+.registration-form{
+    vertical-align: top;
+    background: #B9C0FD1A  0% 0% no-repeat padding-box;
+    opacity: 1;
+    width:75%;
+    height: 100%;
+}
+.register-name{
+    margin-left: 15%;
+    text-align: left;
+    font: normal normal medium 32px/60px Avenir;
+    letter-spacing: 1.28px;
+    color: #5861AE;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.forms .form-1,.forms .form-2{
+    display: inline-block;
+    margin-left: 15%;
+    vertical-align: top;
+}
+ .form-1 input{
+    padding:2% 10% 3% 0%;
+    width:200%;
+    border: none;
+    border-bottom:2px solid #5861AE;
+    margin-top:15%;
+}
+.form-2 input{
+    padding:2% 10% 3% 0%;
+    width:200%;
+    border: none;
+    border-bottom:2px solid #8ba4f5;
+    margin-top:15%;
+    margin-left:55%;
+    vertical-align: top;
+}
+.user-data-btn{
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 3%;
+}
+.user-data-btn button{
+    margin-top: 3%;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding:1% 3% 1% 3%;
+    color: white;
+}
+.user-data-btn input,.user-data-btn span a{
+    font: normal normal medium 32px/60px Avenir;
+    letter-spacing: 1.28px;
+    color: #5861AE;
+}
+
+

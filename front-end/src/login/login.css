@@ -1,0 +1,100 @@
+.login-parent{
+    width:100vw;
+    height: 100vh;
+    margin-bottom: none;
+
+}
+.login-btn{
+    width:45%;
+    margin-left: 5%;
+    height: 550px;
+}
+.login-details .login-btn,.login-details .login{
+    display: inline-block;
+    border-bottom:2px solid #6565a3;
+
+}
+.login{
+    top: 8%;
+    height: 550px;
+    background: #B9C0FD1A 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width:45%;
+    vertical-align: top;
+}
+.login h1{
+    margin-left: 20%;
+    width: 20%;
+    font: normal normal medium 32px/60px Avenir;
+    letter-spacing: 1.28px;
+    color: #4552C1;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.login input{
+    font: normal normal normal 17px/27px Open Sans;
+    letter-spacing: 0.6px;
+    color: #77838F;
+    background-color: #bfc5fc1a ;
+    opacity: 1;
+    width:60%;
+    margin-left:20%;
+    padding:0% 0% 5% 0%;
+    border:none;
+    border-bottom: 2px solid rgb(207, 205, 205);
+}
+.login p{
+    text-align: left;
+    font: normal normal medium 16px/26px Avenir;
+    letter-spacing: 0.64px;
+    color: #4552C1;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left:55%;
+}
+.login button{
+    background: #8c94d8 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left:40%;
+    padding:2% 6% 2% 6%;
+    margin-top:10%;
+    color: aliceblue;
+}
+.login-details1 h1{
+    top: 18%;
+    left:20%;
+    width: 28%;
+    height: 18%;
+    margin-left: 15%;
+    font: normal normal 900 100px/120px Avenir;
+    letter-spacing: 0px;
+    color: #5861AE;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.login-details1 p{
+    font: normal normal normal 20px/26px Avenir;
+    letter-spacing: 0.8px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left: 15%;
+}
+.login-details2 p{
+    font: normal normal normal 16px/26px Avenir;
+    letter-spacing: 0.64px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left: 15%;
+}
+.login-details2 button{
+    border: 2px solid #4552C1;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 15%;
+    padding:2% 5% 2% 4%;
+    background-color: hsl(0, 0%, 100%);
+    color: #4552C1;
+}

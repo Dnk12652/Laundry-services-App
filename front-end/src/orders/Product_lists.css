@@ -1,0 +1,30 @@
+.table-head th,.table-body td{
+    padding-top: 1%;
+    padding-bottom: 1%;
+      text-align: center;
+      width: 7%;
+    
+    }
+
+.product-name-img .product-img,.product-name-img .product-name-des{
+    display: inline-block;
+
+}
+.product-name-des h3{
+    width: 42px;
+    height:19px;
+    text-align: left;
+    font: normal normal 600 14px/30px Open Sans;
+    letter-spacing: 0px;
+    color: #5861AE;
+    opacity: 1;
+    margin:none;
+    padding: none;
+}
+.product-name-des p{
+    width:180px;
+    font: normal normal 600 9px/30px Open Sans;
+    color: #5861AE;
+    margin:none;
+    padding: none;
+}
