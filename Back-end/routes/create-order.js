@@ -17,7 +17,7 @@ router.post("/orders", async (req, res) => {
        const order_slno = "ORDID00" + ((await Order.countDocuments()) +1) 
     const order = await Order.create({ 
         order_id:order_slno,
-        user_data:mongoose.Types.ObjectId(req.user[0]._id),
+        user_data:req.user,
         order_details : req.body.order_details,
         totalcost:req.body.totalcost,
         totalquantity:req.body.totalquantity
