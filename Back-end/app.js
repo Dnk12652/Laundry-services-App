@@ -2,9 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 var jwt = require('jsonwebtoken');
 const cors = require("cors")
-const SECRET = "bacth8landaury";
-// const jwt = require('jsonwebtoken');
-// SECRET = "RESTAPI"
+const dotenv = require("dotenv").config()
 const app = express(); // create a new express application
 //Initializing the Routes
 const orderRoutes = require('.//routes//orders');
@@ -22,15 +20,23 @@ const corsOptions ={
 
 
 // Connecting to the database using mongoose
-const MONGO_URI = "mongodb+srv://Naveen_126:Co2vOTvuONZK6xjw@test.aatxd.mongodb.net/laundryservice?retryWrites=true&w=majority";
-mongoose.connect(MONGO_URI)
-    .then(()=>{console.log("Connected to database")}).catch((err)=>{
+const connection = async () => {
+  try {
+    const connect = await mongoose.connect(process.env.MONGO_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log(
+      connect.connection.host,
+      connect.connection.name,
+      "db connected"
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-    console.log(err.message);
-
-});
-
-
+connection();
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -47,7 +53,7 @@ app.use("/orders",(req,res,next)=>{
             message:"token is missing"
         })
     }
-    jwt.verify(token,SECRET,function(err,decoded){
+    jwt.verify(token,process.env.SECRET,function(err,decoded){
         if(err){
             return res.status(401).json({
                 status:"failed",
@@ -56,7 +62,7 @@ app.use("/orders",(req,res,next)=>{
             })
         }
         else{
-            req.user = decoded.data
+            req.user = decoded.id
             next();
         }
     })

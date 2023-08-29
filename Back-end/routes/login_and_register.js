@@ -157,7 +157,7 @@ router.post("/login",body("Bothemailphone"), body("password") ,async (req, res) 
         }
         bcrypt.compare(password, user.password).then(function(result) {
             if(result){
-                var token = jwt.sign({_id:user._id}, SECRET);
+                var token = jwt.sign({id:user._id}, SECRET);
               return  res.json({
                     status: "sucess",
                     token,
